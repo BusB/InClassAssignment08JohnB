@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InClassAssignment08-JohnB</string>
+    <string name="read_from_cloud">Read from Cloud</string>
+    <string name="write_to_cloud">Write to Cloud</string>
+    <string name="hint_key">Key</string>
+    <string name="hint_value">Value</string>
+</resources>

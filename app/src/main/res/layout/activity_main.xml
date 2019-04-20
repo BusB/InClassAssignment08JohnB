@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/key_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_key" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/value_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_value" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/read_from_cloud"
+            style="@style/ButtonStyle"
+            android:text="@string/read_from_cloud"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+        <Button
+            android:id="@+id/write_to_cloud"
+            style="@style/ButtonStyle"
+            android:text="@string/write_to_cloud" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
